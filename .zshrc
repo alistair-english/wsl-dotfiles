@@ -46,3 +46,6 @@ source $ZSH/oh-my-zsh.sh
 # --- User configuration ---
 # Dotfiles Config alias
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# SSH agent
+eval `keychain -q --eval --agents ssh id_rsa`
